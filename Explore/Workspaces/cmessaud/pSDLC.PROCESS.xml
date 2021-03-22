@@ -1,0 +1,76 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>R5JlJjx9AWbg0Zk-gt-14527271-2021-03-22T08:57:48.706Z::pd.xml</types1:EntryId>
+      <types1:Name>pSDLC</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>chihab-eu</types1:CreatedBy>
+      <types1:CreationDate>2021-03-22T08:57:49Z</types1:CreationDate>
+      <types1:ModifiedBy>chihab-eu</types1:ModifiedBy>
+      <types1:ModificationDate>2021-03-22T12:48:44Z</types1:ModificationDate>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:AutosaveExists>false</types1:AutosaveExists>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  displayName="pSDLC"
+                  name="pSDLC"
+                  overrideAPIName="false">
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="" name="fName" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description="" name="lName" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description="" name="eMail" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="" name="fullName" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </output>
+            <notes/>
+            <deployment suspendOnFault="false" tracingLevel="none">
+               <rest/>
+            </deployment>
+            <flow id="a">
+               <start id="b">
+                  <link id="kmdd8f85" targetId="kmdd8f84"/>
+               </start>
+               <assignment id="kmdd8f84">
+                  <title>Assignment to fullName</title>
+                  <operation source="formula" to="output.fullName">
+                     <expression language="XQuery">$input.fName || ' ' || $input.lName || ' - eMail: ' || $input.eMail </expression>
+                  </operation>
+                  <link id="kmdd8f86" targetId="c"/>
+               </assignment>
+               <end id="c"/>
+            </flow>
+         </process>
+      </types1:Entry>
+      <types1:GUID>0tTjy1s77vkgmlGXAb7vyR</types1:GUID>
+      <types1:DisplayName>pSDLC</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2021-03-22T12:50:45.897Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
