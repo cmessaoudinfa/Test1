@@ -1,0 +1,58 @@
+[
+   {
+      "objectGuid": "0S5pYTzWyaHd3mPjELewah",
+      "objectName": "azure_de_databricks",
+      "objectType": "Connection",
+      "path": "/SYS",
+      "metadata": {
+         "additionalInfo": {
+            "contentType": "JSON",
+            "description": "Databricks Connection - SQL endpoint integration",
+            "documentState": "COMPLETE"
+         },
+         "contextAttributes": [
+            {
+               "name": "id",
+               "value": "@1"
+            }
+         ],
+         "modelVersion": {
+            "major": 0,
+            "minor": 0
+         },
+         "objectRefs": [
+            "127umf7K34od3FydMmrQsG"
+         ],
+         "repoInfo": {
+            "repoHandle": "0121DD0B00000000008I"
+         }
+      }
+   },
+   {
+      "objectGuid": "127umf7K34od3FydMmrQsG",
+      "objectName": "de_ps_azure_multi_node",
+      "objectType": "AgentGroup",
+      "path": "/SYS",
+      "metadata": {
+         "additionalInfo": {
+            "contentType": "JSON",
+            "description": null,
+            "documentState": "VALID"
+         },
+         "contextAttributes": [
+            {
+               "name": "id",
+               "value": "@1"
+            }
+         ],
+         "modelVersion": {
+            "major": 0,
+            "minor": 0
+         },
+         "objectRefs": [],
+         "repoInfo": {
+            "repoHandle": "0121DD2500000000001Q"
+         }
+      }
+   }
+]
